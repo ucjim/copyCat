@@ -1,0 +1,10 @@
+CopyCat is a typing game built using C# and Windows Forms in Visual Studio. 
+
+The form’s Timer control adds a random character to the letterBox control every 800 milliseconds, until there are 7 letters displayed (at 7, the game ends).
+
+The user is instructed to type the characters as they appear, as quick as they can. Correct user input clears that character from the letterBox.
+
+A StatusStrip control displays a count of correct and incorrect inputs, an accuracy calculation lets them know how they are doing; see Update() method in Stats class.
+
+An if / else statement within Form1_Keydown is ran each time a user types; the difficulty of the game (the timer interval) is increased as the users keydowns increase, if they match the character correctly. 
+

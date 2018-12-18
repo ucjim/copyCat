@@ -7,4 +7,12 @@ The user is instructed to type the characters as they appear, as quick as they c
 A StatusStrip control displays a count of correct and incorrect inputs, an accuracy calculation lets them know how they are doing; see Update() method in Stats class.
 
 An if / else statement within Form1_Keydown is ran each time a user types; the difficulty of the game (the timer interval) is increased as the users keydowns increase, if they match the character correctly. 
+ 
+วิธีเล่น รันเกมส์ แล้วก็กด New Game 1ครั้งก่อนการเล่น 
+เกมส์นี้น่าสนใจเพราะเป็นการฝึกพิมพ์ ฝึกการคล่องตัวของการพิมพ์  เพราะตอนนี้ตัวเองยังพิมพ์ช้า เลยอยากพัฒนาเกมส์นี้ 
+สิ่งที่เพิ่มไป
+1.เนื่องจากเกมส์ยังไม่มีปุ่มเริ่มเกมส์ใหม่  จะเล่นอีกรอบต้องรันใหม่  จึงเพิ่มปุ่ม New Game
+2.เพิ่มปุ่มออกเกมส์
+3.เพิ่มเสียงเพลงเวลาเล่นจะได้เพลิดเพลินไปกับเพลง
+4.สร้างเงื่อนไขการแพ้ จากแต่ก่อน กดปุ่มไม่รงกับข้อความที่แสดง ก็ยังไม่แพ้  เลยแก้ให้กดไม่ตรงกับข้อความที่แสดงเป็นแพเลย
 

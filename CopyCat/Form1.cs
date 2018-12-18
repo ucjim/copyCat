@@ -69,5 +69,10 @@ namespace CopyCat
             missedLabel.Text = "Missed: " + stats.Missed;
             accuracyLabel.Text = "Accuracry: " + stats.Accurate + "%";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

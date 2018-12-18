@@ -41,7 +41,9 @@ namespace CopyCat
 
             if (letterBox.Items.Contains(e.KeyCode))
             {
-
+                
+                    
+                   
                 letterBox.Items.Remove(e.KeyCode);
                 letterBox.Refresh();
                 if (timer.Interval > 400)
@@ -63,12 +65,20 @@ namespace CopyCat
                 //The user pressed incorrect key, so update the stats object
                 //by calling its update() method with arguement false
                 stats.Update(false);
+                letterBox.Items.Clear();
+                letterBox.Items.Add("Game Over!");
+                timer.Stop();
+                MessageBox.Show("คุณแพ้แล้วเรื่อวจากพิมพ์ผิด");
+
+
             }
 
             //Update status strip labels
             correctLabel.Text = "Correct: " + stats.Correct;
             missedLabel.Text = "Missed: " + stats.Missed;
             accuracyLabel.Text = "Accuracry: " + stats.Accurate + "%";
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

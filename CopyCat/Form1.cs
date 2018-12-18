@@ -30,6 +30,7 @@ namespace CopyCat
                 letterBox.Items.Clear();
                 letterBox.Items.Add("Game Over!");
                 timer.Stop();
+                MessageBox.Show("คุณแพ้แล้ว");
             }
         }
 
@@ -73,6 +74,17 @@ namespace CopyCat
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            letterBox.Items.Clear();
+            timer.Start();
         }
     }
 }
